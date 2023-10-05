@@ -1,0 +1,172 @@
+<style>
+    #features {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 70px 0 50px 0;
+        background-color: #eff2f8;
+    }
+
+    #features h1 {
+        margin: 0 0 10px 0;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 45.6px;
+        color: var(--primary-color-1);
+    }
+
+    #features h2 {
+        color: var(--primary-color-3);
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    #features h3 {
+        color: var(--primary-color-1);
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    #features .download-btn {
+        font-weight: 500;
+        font-size: 15px;
+        border: 0;
+        padding: 10px 24px 10px 24px;
+        border-radius: 3px;
+        color: #fff;
+        background-color: var(--primary-color-2);
+        border-radius: 30px;
+    }
+
+    #features .download-btn i {
+        font-size: 20px;
+        position: absolute;
+        left: 18px;
+        top: 8.5px;
+    }
+
+
+    #features ul {
+        list-style: none;
+        padding: 0;
+        /* Remove the marker */
+    }
+
+    ul li {
+        display: flex;
+        text-align: center;
+        margin: 0;
+        /* Center-align list items */
+    }
+
+    li {
+        padding: 5px 0px;
+    }
+
+    #features .icon-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--primary-color-1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-button img {
+        max-width: 100%;
+        /* Adjust image size inside the icon button */
+        max-height: 100%;
+        /* Adjust image size inside the icon button */
+    }
+
+
+
+
+
+    #features .download-btn+.download-btn {
+        margin-left: 20px;
+    }
+
+    @media (max-width: 991px) {
+        #features {
+            text-align: center;
+        }
+
+        #features .download-btn+.download-btn {
+            margin: 0 10px;
+        }
+
+        #features .features-img {
+            text-align: center;
+        }
+
+        #features .features-img img {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #features h1 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        #features h2 {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+
+        #features .features-img img {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        #features .features-img img {
+            width: 80%;
+        }
+    }
+</style>
+
+<div id="features" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-2 order-lg-1 features-img">
+                <img class="img-fluid" src="/images/features-image.png" alt="features">
+            </div>
+            <div
+                class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1">
+                <div>
+                    <h1>Duis eleifend nisi in ante accumsan interdum. </h1>
+                    <h2>Nam condimentum ultricies enim, sed elementum magna varius quis. Praesent mollis cursus diam
+                        vehicula venenatis. Proin fringilla tortor in magna cursus euismod. Phasellus elit ligula,
+                        accumsan eget malesuada eget, tincidunt quis massa. Cras feugiat ultricies ante. Nulla eget
+                        nulla vel nunc imperdiet euismod.</h2>
+                    <ul>
+                        <li>
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <div class="icon-button">
+                                    <img class="img-fluid" src="/images/lock-icon1.png" alt="header">
+                                </div>
+                                <h3>Integer consequat rutrum ante ut tincidunt.</h3>
+                            </div>
+                        </li>
+                        <li class="text-center">
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <div class="icon-button">
+                                    <img class="img-fluid" src="/images/cloud-icon.png" alt="header">
+                                </div>
+                                <h3>Maecenas vel aliquet dolor, vel cursus augue.</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <button href="#" class="download-btn">CALL TO ACTION <i>></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div><!-- End features -->

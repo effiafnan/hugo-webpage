@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    {{ block "head" . }}
+        {{ partial "head.html" . }}
+    {{ end }}
+</head>
+<body id="top">
+    <div id="site"> <!-- real SITE starts here -->
+        {{ block "topbar" . }}
+            {{ partial "topbar.html" . }}
+        {{ end }}
+        {{ block "navbar" . }}
+            {{ partial "navbar.html" . }}
+        {{ end }}
+        <main>
+            {{ block "main" . }}
+                <!-- site content from index.html -->
+            {{ end }}
+        </main>
+        {{ block "footer" . }}
+            {{ partial "footer.html" . }}
+        {{ end }}
+    </div> <!-- SITE BODY ends here -->
+</body>
+</html>

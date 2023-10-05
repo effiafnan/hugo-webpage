@@ -1,0 +1,200 @@
+<style>
+    #newsletter {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 70px 0 60px 0;
+    }
+
+    #newsletter h1 {
+        margin: 0 0 10px 0;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 56px;
+        color: var(--primary-color-1);
+    }
+
+    #newsletter h2 {
+        color: var(--primary-color-3);
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    #newsletter h3 {
+        color: var(--primary-color-1);
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    #newsletter img {
+        position: relative;
+        right: 0;
+        width: 475px;
+        height: 573px;
+    }
+
+    .news-details {
+        top: 223px;
+        right: 0;
+        width: 270px;
+        height: 260px;
+        background-color: #ffffff;
+        border-radius: 5.75px;
+        padding: 20px;
+        box-shadow: -24.2662296295166px 41.83832931518555px 100.41197204589844px 0px #0000001A;
+
+    }
+
+    .news-details h3 {
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 26.92px !important;
+        color: var(--primary-color-3) !important;
+        margin-bottom: 16px !important;
+    }
+
+    .news-details h1 {
+        font-size: 30px !important;
+        font-weight: 800 !important;
+        line-height: 26.92px !important;
+        color: var(--primary-color-2) !important;
+        padding: 8px 0;
+    }
+
+    .news-details h1 span {
+        font-size: 16px !important;
+        font-weight: 800 !important;
+        line-height: 26.92px !important;
+        color: var(--primary-color-2) !important;
+    }
+
+
+    @media (max-width: 991px) {
+        #newsletter {
+            text-align: center;
+        }
+
+        #newsletter .newsletter-img {
+            text-align: center;
+        }
+
+        #newsletter .newsletter-img img {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #newsletter h1 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        #newsletter h2 {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+
+        #newsletter .newsletter-img img {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        #newsletter .newsletter-img img {
+            width: 80%;
+        }
+    }
+
+    .loginInput {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .fullname,
+    .email {
+        width: 100%;
+        
+        padding: 16px;
+        padding-left: 50px;
+        border-radius: 5px;
+        border: 1px solid var(--primary-color-1);
+    }
+
+    .icon-input {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .icon-input i {
+       position: absolute;
+       margin: 0 10px;
+       margin-top: 5px;
+    }
+
+    .loginInput button {
+        display: flex;
+        width: 100%;
+        padding: 18px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border: 0;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: var(--primary-color-1);
+        color: #FFF;
+        /* font-family: Plus Jakarta Sans; */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+</style>
+
+<div id="newsletter" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1"
+                data-aos="fade-up">
+                <div>
+                    <h1 class="redi">Quisque id ex molestie mauris dictum pharetra.</h1>
+                    <h2>Integer consequat rutrum ante ut tincidunt. Sed a arcu id mi convallis accumsan nec nec nisi.
+                        Nulla ut imperdiet leo, ut efficitur nisl. Nam efficitur turpis vitae viverra pellentesque.
+                        Aliquam erat volutpat.</h2>
+                    <h3> Phasellus a ante et metus dignissim mattis!</h3>
+                    <div class="d-flex flex-column gap-2 input-fields justify-content-center">
+                        <div class="loginInput">
+                            <div class="icon-input">
+                                <i><object data="/icons/Profile.svg" width="20" height="20"> </object></i>
+
+                                <input class="fullname" id="text" type="text" placeholder="Full Name">
+                            </div>
+                            <div class="icon-input">
+                                <i> <object data="/icons/Send.svg" width="20" height="20"> </object></i>
+                                <input class="email" type="email" placeholder="Email Address">
+                            </div>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="col-lg-6 d-lg-flex flex-lg-column position-relative align-items-stretch order-1 order-lg-2 newsletter-img">
+                <img class="img-fluid" src="/images/newsletter-image.png" alt="newsletter">
+                <div class="position-absolute news-details">
+                    <h3>Our Numbers</h3>
+                    <h1>20K <span>Users</span></h1>
+                    <h1>30 <span>Clients</span></h1>
+                    <h1>150+ <span>App Downloads</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End newsletter -->
